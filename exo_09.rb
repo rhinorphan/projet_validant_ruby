@@ -1,6 +1,8 @@
+require 'date' # import library for date // similar to a link in HTML
 puts "Bonjour, veuillez choisir votre année de naissance s'il-vous-plait !"
 print "> "
-user_number = gets.to_i
-(user_number).upto(2021).each do |i| # count from user_number up to this year 2021
+user_yob = gets.to_i
+CurrentYear = Date.today.year
+(user_yob).upto(CurrentYear).each do |i| # count from user_yob up to the current year (2021 at the time I wrote this program)
   puts i 
 end 
