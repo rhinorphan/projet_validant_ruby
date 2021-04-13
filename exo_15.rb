@@ -1,8 +1,13 @@
-puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
+puts "Salut, bienvenue dans ma super pyramide ! Choisis un nombre d'étages entre 1 et 25."
 print "> "
-user_floors = gets.to_i
+floors_input = gets.to_i
 x = "#"
-user_floors.times do 
-  puts "#{x}"
+floors_input.times do 
+  puts x
   x += "#"
 end
+
+# We could have used "for i in 0..floors_input" to create the loop  
+# for i in 1..floors_input
+#    puts "dieze * i"
+# end
